@@ -17,6 +17,7 @@ Setup
 2. `git clone git@github.com:fusioneng/interactive-template.git`
 3. Run `bundle` to install Ruby dependencies
 4. Run `npm install` to install Node dependencies
+5. HTML goes in `src/htdocs`, JS in `src/js` and SASS in `src/sass`
 
 Testing
 =======
