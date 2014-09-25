@@ -1,4 +1,33 @@
-interactive-template
-====================
+Fusion Interactive Template
+===========================
+A template for new interactive projects.
 
-A template for new interactive projects. Features Browserify, Watchify (for fast project rebuilds), SASS (with source maps and compass), BrowerSync for static server and automatic refresh, automatic image optimisation, Gulp build process and CSS/JS minimisation.
+Why use this?
+- Includes a static server for testing your project
+- Rebuild your code base automatically when changes are detected with Watchify
+- Compiles all code with Browserify and concatenates into one file
+- Automatically reversions static assets
+- Includes BrowserSync to make testing on multiple devices easy
+- Supports SASS, Compass and source maps
+- Automatically compress images
+
+Setup
+=====
+1. Install Node, NPM and Ruby if not already available
+2. `git clone git@github.com:fusioneng/interactive-template.git`
+3. Run `bundle` to install Ruby dependencies
+4. Run `npm install` to install Node dependencies
+
+Testing
+=======
+To start a static server, cd to the project directory and run:
+
+	gulp
+
+Build
+=====
+To compile the project for distribution:
+
+	gulp dist
+
+This will version all static assets and minimise all the code. Output will be built into the directory `dist`.
