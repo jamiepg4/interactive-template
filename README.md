@@ -12,7 +12,7 @@ Why use this?
 - Automatically compress images
 
 Setup
-=====
+-----
 1. Install Node, NPM and Ruby if not already available
 2. `git clone git@github.com:fusioneng/interactive-template.git`
 3. Run `bundle` to install Ruby dependencies
@@ -20,13 +20,13 @@ Setup
 5. HTML goes in `src/htdocs`, JS in `src/js` and SASS in `src/sass`
 
 Develop
-=======
+-------
 To start a static server, cd to the project directory and run:
 
 	gulp
 
 Build
-=====
+-----
 To compile the project for distribution:
 
 	gulp dist
@@ -34,7 +34,7 @@ To compile the project for distribution:
 This will version all static assets and minimise all the code. Output will be built into the directory `dist`.
 
 Publish
-=======
+-------
 To publish to interactive.fusion.net run this in the project root:
 
 	gulp publish
