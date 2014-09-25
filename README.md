@@ -19,7 +19,7 @@ Setup
 4. Run `npm install` to install Node dependencies
 5. HTML goes in `src/htdocs`, JS in `src/js` and SASS in `src/sass`
 
-Testing
+Develop
 =======
 To start a static server, cd to the project directory and run:
 
@@ -32,3 +32,11 @@ To compile the project for distribution:
 	gulp dist
 
 This will version all static assets and minimise all the code. Output will be built into the directory `dist`.
+
+Publish
+=======
+To publish to interactive.fusion.net run this in the project root:
+
+	gulp publish
+
+You will need a valid key for Google Cloud Storage.
