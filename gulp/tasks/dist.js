@@ -18,11 +18,11 @@ gulp.task('copy', ['clean'], function() {
 
 gulp.task('dist', ['copy'], function() {
 
-    gulp.src('./dist/app.js')
+    gulp.src('./dist/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('dist'));
 
-    gulp.src('./dist/app.css')
+    gulp.src('./dist/*.css')
         .pipe(minifycss())
         .pipe(gulp.dest('dist'));
 
