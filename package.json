@@ -1,5 +1,5 @@
 {
-  "name": "Fusion Interactive Template",
+  "name": "fusion-interactive-template",
   "version": "1.0.0",
   "description": "A template for new interactive projects. Features Browserify, Watchify (for fast project rebuilds), SASS (with source maps and Compass), BrowerSync for static server and automatic refresh, automatic image optimisation, Gulp build process and CSS/JS minimisation.",
   "repository": {
