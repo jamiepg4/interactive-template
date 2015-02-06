@@ -19,6 +19,8 @@ Setup
 4. Run `npm install` to install Node dependencies
 5. HTML goes in `src/htdocs`, JS in `src/js` and SASS in `src/sass`
 
+The preview URL, publish URL and post ID should be entered in package.json.
+
 Develop
 -------
 To start a static server, cd to the project directory and run:
