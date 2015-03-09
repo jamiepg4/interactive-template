@@ -4,10 +4,13 @@
   "postId": 42470,
   "previewUrl": "http://interactive.fusion.net/interactive-template/",
   "publishUrl": "gs://interactive.fusion.net/interactive-template/",
-  "description": "A template for new interactive projects. Features Browserify, Watchify (for fast project rebuilds), SASS (with source maps and Compass), BrowerSync for static server and automatic refresh, automatic image optimisation, Gulp build process and CSS/JS minimisation.",
+  "description": "A template for new interactive projects. Features Browserify, Watchify (for fast project rebuilds), SASS (with source maps and Compass), BroswerSync for static server and automatic refresh, automatic image optimisation, Gulp build process and CSS/JS minimisation.",
   "repository": {
     "type": "git",
     "url": "git://github.com/fusioneng/interactive-template.git"
+  },
+  "browser": {
+    "underscore": "backbone/node_modules/underscore"
   },
   "browserify": {
     "transform": [
