@@ -9,9 +9,6 @@
     "type": "git",
     "url": "git://github.com/fusioneng/interactive-template.git"
   },
-  "browser": {
-    "underscore": "backbone/node_modules/underscore"
-  },
   "browserify": {
     "transform": [
       "browserify-shim"
