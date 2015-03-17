@@ -4,3 +4,4 @@ build
 dist
 Desktop.ini
 node_modules
+npm-debug.log
