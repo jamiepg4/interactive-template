@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var execSync = require('exec-sync');
+var execSync = require('child_process').execSync;
 var p = require('../../package.json');
 
 gulp.task('clear-server', ['dist'], function() {
