@@ -1,10 +1,8 @@
-var $ = require('jquery');
-var app = {};
+// var $ = require('jquery');
 
-$(function () {
+// // Uncomment to use jQuery
+// $(function () {
 
-    'use strict';
 
-    console.log('Hello world');
 
-});
+// });
