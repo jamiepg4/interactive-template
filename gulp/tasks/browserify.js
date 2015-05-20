@@ -17,6 +17,7 @@ var handleErrors = require('../util/handleErrors');
 var source       = require('vinyl-source-stream');
 var config       = require('../config').browserify;
 var _            = require('lodash');
+var execSync     = require('child_process').execSync;
 
 var browserifyTask = function(callback, devMode) {
 
@@ -88,7 +89,11 @@ var browserifyTask = function(callback, devMode) {
   config.bundleConfigs.forEach(browserifyThis);
 };
 
-gulp.task('browserify', browserifyTask);
+gulp.task('wipe', function() {
+  return execSync('rm -rf ./build/');
+});
+
+gulp.task('browserify', ['wipe'], browserifyTask);
 
 // Exporting the task so we can call it directly in our watch task, with the 'devMode' option
 module.exports = browserifyTask;

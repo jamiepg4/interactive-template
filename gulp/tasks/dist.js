@@ -1,30 +1,26 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var minifycss = require('gulp-minify-css');
-var jsonminify = require('gulp-jsonminify');
-var clean = require('gulp-clean');
-var revall = require('gulp-rev-all');
+var RevAll = require('gulp-rev-all');
 var p = require('../../package.json');
+var execSync = require('child_process').execSync;
 
 gulp.task('clean', ['build'], function() {
-    return gulp.src('./dist', {read: false})
-        .pipe(clean());
+    return execSync('rm -rf ./dist/');
 });
 
 gulp.task('copy', ['clean'], function() {
+    var revAll = new RevAll({
+        dontRenameFile: ['.html', /^\/favicon.ico$/g, /^\/boot.js/g, /^\/images/g],
+        prefix: global.previewUrl || p.previewUrl
+    });
+
     return gulp.src('./build/**')
-            .pipe(revall({
-                ignore: [/^\/favicon.ico$/g, /^\/index.html/g, /^\/boot.js/g, /^\/images/g],
-                prefix: global.previewUrl || p.previewUrl
-            }))
+            .pipe(revAll.revision())
             .pipe(gulp.dest('dist'));
 });
 
 gulp.task('dist', ['copy'], function() {
-    gulp.src(['./dist/**/*.json'])
-        .pipe(jsonminify())
-        .pipe(gulp.dest('dist'));
-
     gulp.src('./dist/*.css')
         .pipe(minifycss())
         .pipe(gulp.dest('dist'));
