@@ -16,7 +16,6 @@
     "gulp-changed": "*",
     "gulp-filesize": "*",
     "gulp-imagemin": "*",
-    "gulp-jsonminify": "*",
     "gulp-minify-css": "*",
     "gulp-notify": "*",
     "gulp-rev-all": "*",
