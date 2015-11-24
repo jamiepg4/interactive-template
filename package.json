@@ -1,6 +1,7 @@
 {
   "name": "interactive-template",
   "version": "1.0.0",
+  "license": "MIT",
   "previewUrl": "http://interactive.fusion.net/interactive-template/",
   "publishUrl": "gs://interactive.fusion.net/interactive-template/",
   "description": "",
@@ -30,7 +31,6 @@
     "watchify": "*"
   },
   "dependencies": {
-    "underscore": "~1.7.0",
-    "jquery": "~2.1.0"
+    "jquery": "~"
   }
 }
