@@ -31,6 +31,6 @@
     "watchify": "*"
   },
   "dependencies": {
-    "jquery": "~"
+    "jquery": "*"
   }
 }
