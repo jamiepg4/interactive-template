@@ -6,3 +6,5 @@ dist
 Desktop.ini
 node_modules
 npm-debug.log
+Gemfile.lock
+*.sublime-workspace
