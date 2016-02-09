@@ -28,6 +28,7 @@
     "lodash": "*",
     "pretty-hrtime": "*",
     "require-dir": "*",
+    "underscore": "*",
     "vinyl-source-stream": "*",
     "watchify": "*"
   },
