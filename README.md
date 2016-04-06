@@ -25,7 +25,7 @@ The preview URL, publish URL and post ID should be entered in package.json.
 
 Text Fetcher
 ------------
-1. Put the Google Doc ID into `package.json`
+1. Put the Google Doc ID into `package.json` under the key name `document`
 2. Share the Google Doc with text-fetcher@fusion-static.iam.gserviceaccount.com
 3. Download the [Fusion key file][key-file] and put it in the root of your project directory
 4. Use Mustache syntax to determine where your text snippets belong
