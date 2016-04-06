@@ -26,8 +26,9 @@ The preview URL, publish URL and post ID should be entered in package.json.
 Text Fetcher
 ------------
 1. Put the Google Doc ID into `package.json`
-2. Download the Fusion key file and put it in the root of your project directory
-3. Use Mustache syntax to determine where your text snippets belong
+2. Share the Google Doc with text-fetcher@fusion-static.iam.gserviceaccount.com
+3. Download the [Fusion key file][key-file] and put it in the root of your project directory
+4. Use Mustache syntax to determine where your text snippets belong
 
 Develop
 -------
@@ -50,3 +51,5 @@ To publish to interactive.fusion.net run this in the project root:
 	gulp publish
 
 You will need a valid key for Google Cloud Storage.
+
+[key-file]: https://drive.google.com/a/fusion.net/file/d/0B-o9W3rDNbkoT3BxQ0RST1BwS2s/view?usp=sharing
