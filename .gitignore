@@ -8,3 +8,5 @@ node_modules
 npm-debug.log
 Gemfile.lock
 *.sublime-workspace
+text.json
+google.pem
