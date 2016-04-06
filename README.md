@@ -3,6 +3,8 @@ Fusion Interactive Template
 A template for new interactive projects.
 
 Why use this?
+- Support for downloading text from Google Docs, compiling it through ArchieML and injecting it into your project
+- Includes Mustache templating engine to merge documents into valid markup
 - Includes a static server for testing your project
 - Rebuild your code base automatically when changes are detected with Watchify
 - Compiles all code with Browserify and concatenates into one file
@@ -20,6 +22,12 @@ Setup
 5. HTML goes in `src/htdocs`, JS in `src/js` and SASS in `src/sass`
 
 The preview URL, publish URL and post ID should be entered in package.json.
+
+Text Fetcher
+------------
+1. Put the Google Doc ID into `package.json`
+2. Download the Fusion key file and put it in the root of your project directory
+3. Use Mustache syntax to determine where your text snippets belong
 
 Develop
 -------
