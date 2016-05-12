@@ -22,7 +22,7 @@ gulp.task('copy', ['clean'], function() {
 
 gulp.task('dist', ['copy'], function() {
     gulp.src('./dist/*.css')
-        .pipe(minifycss())
+        .pipe(minifycss({processImport: false}))
         .pipe(gulp.dest('dist'));
 
     return gulp.src('./dist/*.js')
