@@ -3,5 +3,5 @@ var execSync = require('child_process').execSync;
 var p = require('../../package.json');
 
 gulp.task('publish', ['dist'], function() {
-    execSync('gsutil -m rsync -c -r -d ./dist/ ' + p.publishUrl);
+    execSync('aws s3 sync ./dist/ ' + p.publishUrl);
 });

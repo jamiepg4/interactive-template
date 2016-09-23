@@ -19,7 +19,9 @@ Setup
 2. `git clone git@github.com:fusioneng/interactive-template.git`
 3. Run `bundle` to install Ruby dependencies
 4. Run `npm install` to install Node dependencies
-5. HTML goes in `src/htdocs`, JS in `src/js` and SASS in `src/sass`
+5. HTML goes in `src/htdocs`, JS in `src/js` and SASS in `src/sass` 
+6. If you will be publishing, make sure you have the [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
+   installed and configured.
 
 The preview URL, publish URL and post ID should be entered in package.json.
 
@@ -51,6 +53,7 @@ To publish to interactive.fusion.net run this in the project root:
 
 	gulp publish
 
-You will need a valid key for Google Cloud Storage.
+You will need valid AWS credentials with the "AmazonS3FullAccess" Permission Policy enabled. Clarence Kwei, Zebulon
+Young, or Nathaniel Taintor can provide these credentials.
 
-[key-file]: https://drive.google.com/a/fusion.net/file/d/0B-o9W3rDNbkoT3BxQ0RST1BwS2s/view?usp=sharing
+

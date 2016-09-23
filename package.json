@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "previewUrl": "http://interactive.fusion.net/interactive-template/",
-  "publishUrl": "gs://interactive.fusion.net/interactive-template/",
+  "publishUrl": "s3://fusion-net-interactive/interactive-template/",
   "description": "",
   "repository": {
     "type": "git",
